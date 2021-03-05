@@ -1,0 +1,13 @@
+.btn{
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    outline: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+    color: $text;
+    font-size: 22px;
+    font-weight: 700;
+    border: 0;
+}

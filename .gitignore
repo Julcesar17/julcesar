@@ -1,0 +1,41 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/gulp/tmp
+/gulp/out-tsc
+
+# dependencies
+/gulp/node_modules
+
+# IDEs and editors
+/gulp/.idea
+/gulp/.project
+/gulp/.classpath
+/gulp/.c9/
+/gulp/.settings/
+
+# IDE - VSCode
+/gulp/.vscode/*
+/gulp/!.vscode/settings.json
+/gulp/!.vscode/tasks.json
+/gulp/!.vscode/launch.json
+/gulp/!.vscode/extensions.json
+
+# misc
+/gulp/.sass-cache
+/gulp/connect.lock
+/gulp/coverage
+/gulp/libpeerconnection.log
+/gulp/npm-debug.log
+/gulp/testem.log
+/gulp/typings
+
+# System Files
+.DS_Store
+*/.DS_Store
+Thumbs.db
+/gulp/.DS_Store
+/gulp/Thumbs.db
+
+package-lock.json
+/gulp/package-lock.json
