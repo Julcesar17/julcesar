@@ -38,6 +38,11 @@ function js() {
     .pipe(dest('../assets/js', { sourcemaps: false }));
 }
 
+function icons() {
+    return src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    .pipe(dest('../assets/webfonts/'));
+}
+
 function plugins() {
     return src([
         './node_modules/tiny-slider/dist/min/tiny-slider.js'
@@ -61,8 +66,9 @@ function real() {
     watch(['css/**/*.scss', 'js/**/*.js'], parallel(css, js));
 }
 
+exports.icons = icons;
 exports.js = js;
 exports.css = css;
 exports.plugins = plugins;
 exports.watch = real;
-exports.default = parallel(css, js, plugins);
+exports.default = parallel(css, js, plugins, icons);

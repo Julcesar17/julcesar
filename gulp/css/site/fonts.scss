@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/Campton-Bold.eot');
+    src: url('../fonts/campton/Campton-Bold.eot') format('embedded-opentype'),
+            url('../fonts/campton/Campton-Bold.woff') format('woff'),
+            url('../fonts/campton/Campton-Bold.ttf') format('truetype'),
+            url('../fonts/campton/Campton-Bold.svg#Campton-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/Campton-Medium.eot');
+    src: url('../fonts/campton/Campton-Medium.eot') format('embedded-opentype'),
+            url('../fonts/campton/Campton-Medium.woff') format('woff'),
+            url('../fonts/campton/Campton-Medium.ttf') format('truetype'),
+            url('../fonts/campton/Campton-Medium.svg#Campton-Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/Campton-Light.eot');
+    src: url('../fonts/campton/Campton-Light.eot') format('embedded-opentype'),
+            url('../fonts/campton/Campton-Light.woff') format('woff'),
+            url('../fonts/campton/Campton-Light.ttf') format('truetype'),
+            url('../fonts/campton/Campton-Light.svg#Campton-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rockness';
+    src: url('../fonts/rockness/rockness.eot');
+    src: url('../fonts/rockness/rockness.eot') format('embedded-opentype'),
+            url('../fonts/rockness/rockness.woff') format('woff'),
+            url('../fonts/rockness/rockness.ttf') format('truetype'),
+            url('../fonts/rockness/rockness.svg#rockness') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

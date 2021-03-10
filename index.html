@@ -21,15 +21,37 @@
     <link href="./assets/css/index.css" rel="stylesheet" />
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="header">
+        <div class="menu">
+            <input id="toggle" type="checkbox">
+            <label id="toggle-btn" for="toggle"></label>
+            <div class="nav-icon"></div>
+        </div>
+        <nav>
+            <ul id="listMenu">
+                <li class="item">
+                    <a href="./salados.html">Salados</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section class="page-home">
-        <div class="image-content">
-            <img src="./assets/images/home/julio_herrera.jpg" alt="Imagen Julio Cesar Herrera Villagrán">
+        <div class="main-content">
+            <div class="description">
+                <div class="description-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid velit tempore vero odit! Quae, iusto? Facilis reprehenderit officia architecto rerum vel doloremque, ea fugiat ut odio est adipisci facere?</p>
+                    <p>
+                        <a href="#">Acerca de mi.</a>
+                    </p>
+                    <a href="#">
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="personal-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid velit tempore vero odit! Quae, iusto? Facilis reprehenderit officia architecto rerum vel doloremque, ea fugiat ut odio est adipisci facere?</p>
+        <div class="banner-content">
+            <h1>Julio Herrera</h1>
         </div>
     </section>
 

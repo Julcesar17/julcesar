@@ -1,18 +1,27 @@
-// Básicos
+//Basic colors
 $white:#ffffff;
 $black:#000000;
-$green: #93dfbc;
-$blue: #2b88fc;
+//Main colors
+$purple: #8739f9;
+$rose: #c651cd;
+$gray: #363636;
+//Darks colors
+$gray-1: #100f10;
+$gray-2: #1b1b1b;
+$gray-3: #242424;
 /*---------------------------------*/
 
-// Textos
-$text: $black;
+//Texts
+$text-1: rgba($white,0.96);
+$text-2: rgba($white,0.67);
+$text-3: rgba($white,0.45);
 /*---------------------------------*/
 
-// Borders
+//Borders
 /*---------------------------------*/
 
-// Fondos
-$background-gradient-color-1: #88cbc7;
-$background-gradient-color-2: #7ed0fe;
+//Backgrounds
+$background-1: $black;
+$background-2: $gray-3;
+$background-3: $white;
 /*---------------------------------*/

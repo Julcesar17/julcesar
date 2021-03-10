@@ -1,10 +1,70 @@
 .page-home{
     width: 100%;
-    .image-content{
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+    margin: 0 auto;
+    .main-content{
+        width: 50%;
+        margin-right: auto;
+        .description{
+            padding: 3vw;
+            height: 100vh;
+            min-height: 600px;
+            outline: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .description-content{
+                text-align: center;
+                max-width: 500px;
+                position: relative;
+                p{
+                    font-size: 1.65em;
+                    line-height: 1.6;
+                    a{
+                        text-decoration: underline;
+                        color: $text-2;
+                        padding: 5px 10px;
+                        display: inline-block;
+                        &:hover{
+                            background-color: $background-2;
+                            color: $text-1;
+                        }
+                    }
+                }
+                > a{
+                    margin-top: 50px;
+                    display: inline-block;
+                    position: absolute;
+                    width: 70px;
+                    height: 80px;
+                    left: calc(50% - 35px);
+                    animation: arrow 1.5s infinite;
+                    i{
+                        font-size: 80px;
+                        color: $text-1;
+                    }
+                }
+            }
+        }
+    }
+    .banner-content{
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-image: url('../images/home/julio_herrera.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 35%;
+        h1{
+            font-family: 'Rockness';
+            position: fixed;
+            bottom: 0px;
+            right: 25%;
+            transform: translateX(50%);
+            font-size: 150px;
+            line-height: 1;
+            color: $text-1;
         }
     }
 }
