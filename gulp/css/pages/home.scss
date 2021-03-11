@@ -4,14 +4,21 @@
     .main-content{
         width: 50%;
         margin-right: auto;
+        @include mq(mobile, max){
+            width: 100%;
+        }
         .description{
             padding: 3vw;
             height: 100vh;
             min-height: 600px;
-            outline: 1px solid #fff;
             display: flex;
             justify-content: center;
             align-items: center;
+            @include mq(mobile, max){
+                height: auto;
+                min-height: auto;
+                padding: 5vw 3vw;
+            }
             .description-content{
                 text-align: center;
                 max-width: 500px;
@@ -19,6 +26,10 @@
                 p{
                     font-size: 1.65em;
                     line-height: 1.6;
+                    @include mq(tablet, max){
+                        font-size: 1.3em;
+                        line-height: 1.2;
+                    }
                     a{
                         text-decoration: underline;
                         color: $text-2;
@@ -33,14 +44,39 @@
                 > a{
                     margin-top: 50px;
                     display: inline-block;
-                    position: absolute;
                     width: 70px;
                     height: 80px;
-                    left: calc(50% - 35px);
                     animation: arrow 1.5s infinite;
                     i{
                         font-size: 80px;
                         color: $text-1;
+                    }
+                    @include mq(tablet, max){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .more-info{
+            padding: 3vw;
+            padding-left: 5vw;
+            .content-info{
+                h2{
+                    margin-top: 0;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: calc(5vw - 20px);
+                        left: -5vw;
+                        top: calc(50% - 2px);
+                        background-color: $text-1;
+                    }
+                    @include mq(mobile, max){
+                        &::before{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -56,15 +92,40 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 35%;
+        &:hover{
+            background-image: url('../images/home/julio_herrera.jpg');
+        }
+        @include mq(mobile, max){
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background-image: url('../images/home/julio_herrera.jpg');
+        }
         h1{
             font-family: 'Rockness';
             position: fixed;
-            bottom: 0px;
+            bottom: 10vh;
             right: 25%;
             transform: translateX(50%);
             font-size: 150px;
             line-height: 1;
             color: $text-1;
+            margin: 0;
+            @media (max-width: 1400px){
+                font-size: 100px;
+            }
+            @include mq(tablet, max){
+                font-size: 80px;
+            }
+            @include mq(mobile, max){
+                font-size: 60px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+                right: 0%;
+                transform: translateX(0%);
+                bottom: -40vh;
+            }
         }
     }
 }
